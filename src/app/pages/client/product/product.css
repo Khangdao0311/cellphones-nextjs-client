@@ -1,0 +1,254 @@
+.filter-box,
+.sort {
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+}
+
+.filter-title,
+.sort-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.filter-items,
+.sort-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-item {
+    display: block;
+    position: relative;
+}
+
+.filter-btn,
+.sort-item,
+.filter-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 34px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.filter-btn.active,
+.sort-item.active,
+.filter-option.active {
+    background: #fef2f2;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.filter-icon,
+.sort-icon {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 100%;
+}
+
+.filter-text,
+.sort-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 6px;
+}
+
+.filter-text>span,
+.sort-text>span {
+    text-decoration: underline;
+
+}
+
+.filter-wrapper {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: calc(100% + 10px);
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
+    padding: 10px 10px;
+    transition: .5s;
+    width: 350px;
+}
+
+.filter-wrapper.active {
+    display: block;
+    opacity: 1;
+    z-index: 10;
+}
+
+.filter-wrapper::after {
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    left: 30px;
+    position: absolute;
+    top: -10px;
+}
+
+.filter-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.filter-option {
+    position: relative;
+}
+
+.filter-option.active::after {
+    background-color: var(--primary);
+    border-radius: 8px 0 10px 0;
+    color: #fff;
+    content: "✓";
+    font-size: 7px;
+    height: 12px;
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+}
+
+.filter-range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-range>input {
+    width: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.filter-range>input::before {
+    /* content: "";
+    position: absolute;
+    width: 20000px;
+    height: 20px;
+    background-color: yellow;
+    top: 0 ;
+    left: 0; */
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    z-index: 100000;
+
+    content: "✓";
+
+    /* background-color: var(--primary);
+    border-radius: 8px 0 10px 0;
+    color: #fff;
+    content: "✓";
+    font-size: 7px;
+    height: 12px;
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px; */
+}
+
+
+.filter-range>hr {
+    border: none;
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 20px;
+    margin: 24px 0;
+}
+
+
+.filter-close,
+.filter-show {
+    width: 50%;
+    min-height: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 6px 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.filter-close {
+    background-color: #feecf0;
+    color: var(--primary);
+}
+
+.filter-show {
+    background-color: var(--primary);
+    color: #feecf0;
+
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.pagination-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0, .1);
+    transition: all .2s;
+}
+
+.pagination-item.active,
+.pagination-item:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFF;
+}

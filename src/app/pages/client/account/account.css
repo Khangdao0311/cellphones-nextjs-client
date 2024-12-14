@@ -1,0 +1,335 @@
+.account {
+    margin-top: 20px;
+    display: flex;
+}
+
+.account .account-content {
+    width: 80%;
+    margin-left: 18px;
+}
+
+.account .account-smem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.account .account-welcome {
+    display: flex;
+    align-items: stretch;
+}
+
+.account .welcome-avater {
+    background-color: #fff;
+    border: 1px solid #a83288;
+    border-radius: 50%;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.account .welcome-avater>img {
+    object-fit: cover;
+}
+
+.account .welcome-smember {
+    color: #a83288;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    line-height: 1.8rem;
+    padding: 3px 10px;
+}
+
+.account .smember-name {
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.account .smember-phone {
+    color: #637381;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.account .smember-rank {
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 0 0 .5px #a83288;
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 15px;
+    padding: 2px 5px;
+    display: inline !important;
+    text-transform: uppercase;
+}
+
+.account .account-cumulative {
+    display: flex;
+    padding: 5px 0 20px;
+    background-color: #fff;
+    border: 1px solid #eaedef;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.account .cumulative-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.account .cumulative-item:not(:first-child) {
+    border-left: 1px solid #111;
+}
+
+.account .cumulative-quantity {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.account .cumulative-title {
+    font-size: 1.3rem;
+}
+
+.account .account-sliding {
+    background-color: #fff5e5;
+    border: 1px solid rgba(145, 158, 171, .239);
+    border-radius: 8px;
+    padding: 16px 0 16px 16px;
+    margin-top: 15px;
+}
+
+.account .sliding-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.account .sliding-title>p {
+    color: #000;
+    font-size: 2.2rem;
+}
+
+.account .sliding-title>.show-more {
+    font-size: 1.4rem;
+    gap: 5px;
+    margin-right: 16px;
+    color: var(--primary);
+}
+
+.account .sliding-box {
+    width: 100%;
+}
+
+.account .slide {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+
+}
+
+.account .slide-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.account .slide-image {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid rgba(145, 158, 171, .239);
+    border-radius: 8px;
+    display: block;
+    width: auto;
+    height: 160px;
+    max-height: 160px;
+}
+
+.account .slide-name {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    margin-top: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+
+.account .wishList {
+    margin-top: 15px;
+}
+
+.account .wishList-title {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.account .account-info {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account .info-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.account .info-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.account .info-form {
+    width: 100%;
+}
+
+.account .box-group {
+    margin-top: 20px;
+    position: relative;
+}
+
+.account .group-input {
+    box-sizing: border-box;
+    color: #222;
+    /* font-size: 1.6rem; */
+    padding: 10px 20px 10px 15px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    background: transparent;
+    font-size: 1.4rem;
+
+}
+
+.account .group-title {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    display: none;
+    user-select: none;
+}
+
+.account .group-input:not(:placeholder-shown)~.group-title {
+    display: block;
+}
+
+.account .group-edit {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.account .group-edit>svg {
+    width: 15px;
+    height: 15px;
+}
+
+.account .group-go {
+    color: #777;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.account .account-submit {
+    background: #e0052b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 40px 0;
+    padding: 11px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.account .account-title {
+    min-height: 53px;
+    padding: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.account .cpw-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.account .cpw-image>img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.account .cpw-group {
+    margin-top: 30px;
+}
+
+.account .cpw-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.account .product {
+    width: calc(25% - ((10px * (100 / 25 - 1)) / (100 / 25))) !important;
+}
+
+.account .product:nth-child(4n) {
+    margin-right: 0;
+}
+
+.account .product:nth-child(5n) {
+    margin-right: 10px !important;
+}
+
+/*  */

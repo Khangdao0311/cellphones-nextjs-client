@@ -1,0 +1,42 @@
+.account-menu {
+    width: 20%;
+    background-color: #f6fbfc;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.account-menuItem {
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: .5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 5px 10px;
+    gap: 10px;
+    user-select: none;
+    border: .5px solid transparent;
+}
+
+.account-menuItem .item-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.account-menuItem .item-text {
+    color: #686868;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.account-menuItem:hover,
+.account-menuItem.active {
+    background-color: #fee;
+    border: .5px solid var(--primary);
+    border-radius: 10px;
+    color: var(--primary);
+}
+
+.account-menuItem.active .item-text {
+    color: var(--primary);
+}

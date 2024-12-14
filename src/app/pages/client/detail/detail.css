@@ -1,0 +1,775 @@
+.detail-info {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.detail-info .info-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.detail-info .detail-name {
+    line-clamp: 3;
+    box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #0a263c;
+    display: -webkit-box;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+}
+
+.detail-info .detail-rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 3px;
+}
+
+.detail-info .detail-rating>svg {
+    color: #f59e0b;
+}
+
+.detail-info .info-hr {
+    border: none;
+    height: 2px;
+    margin: 10px 0 15px;
+    background-color: #f5f5f5;
+}
+
+.detail-info .info-content {
+    display: flex;
+}
+
+.detail-info .content-left {
+    width: 60%;
+    height: max-content;
+    position: sticky;
+    top: 105px;
+}
+
+.detail-info .detail-gallery {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.detail-info .gallery-sliding {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    height: 400px;
+    margin: 0 0 10px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.detail-info .slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    padding: 10px;
+    background-color: #FFF;
+    user-select: none;
+}
+
+.detail-info .slide.linear-gradient {
+    background: linear-gradient(90deg, #dd5e89, #f7bb97);
+}
+
+
+.detail-info .detail-image {
+    background: #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    text-align: left;
+    margin-right: 8px;
+}
+
+.detail-info .detail-feature {
+    display: block;
+}
+
+.detail-info .feature-title {
+    bottom: 5px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 5px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.detail-info .feature-list {
+    display: block;
+}
+
+.detail-info .feature-item {
+    color: #fff;
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 1.45;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.detail-info .gallery-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.detail-info .gallery-navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.detail-info .navigation-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #d1d5db;
+    cursor: pointer;
+    height: 50px;
+    overflow: hidden;
+    width: 50px;
+    gap: 2px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.detail-info .navigation-item.swiper-slide-thumb-active {
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+.detail-info .navigation-item>svg {
+    width: 24px;
+    height: 24px;
+}
+
+.detail-info .navigation-item>p {
+    color: #666;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.detail-info .navigation-item>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.detail-info .detail-warranty_store {
+    display: flex;
+    margin-top: 5px;
+}
+
+.detail-info .detail-warranty,
+.detail-info .detail-store {
+    margin: 12px;
+    width: 50%;
+}
+
+.detail-info .detail-warranty {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 10px 0;
+}
+
+.detail-info .warranty-title {
+    color: #444;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.detail-info .warranty-list {
+    display: block;
+}
+
+.detail-info .warranty-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.detail-info .warranty-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.detail-info .warranty-content {
+    font-size: 1.4rem;
+    max-width: calc(100% - 30px);
+}
+
+.detail-info .warranty-content>a {
+    color: var(--primary);
+}
+
+.detail-info .detail-store {
+    display: block;
+}
+
+.detail-info .store-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.detail-info .store-province,
+.detail-info .store-district {
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    height: 36px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-info .store-count {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.detail-info .store-count>strong {
+    color: #363636;
+    font-weight: 700;
+}
+
+.detail-info .store-list {
+    border: 1px solid #e5e7eb;
+    background-color: #FFF;
+    border-radius: 10px;
+    max-height: 200px;
+    min-height: 140px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.detail-info .store-item {
+    height: 33px;
+    overflow: hidden;
+    padding: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.detail-info .store-item:nth-child(2n+1) {
+    background-color: #f2f2f2;
+}
+
+.detail-info .store-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--primary);
+}
+
+.detail-info .store-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.detail-info .store-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.detail-info .store-content {
+    font-size: 1.2rem;
+}
+
+.detail-info .content-right {
+    width: 40%;
+    padding-left: 20px;
+}
+
+
+.detail-info .detail-variants {
+    margin-bottom: 10px;
+}
+
+.detail-info .variants-title {
+    color: #444;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.detail-info .variants-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.detail-info .variants-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    color: #444;
+    cursor: pointer;
+    font-size: 1.2rem;
+    gap: 10px;
+    width: calc(33.3333333% - ((10px * (100 / 33.3333333 - 1)) / (100 / 33.3333333)));
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.detail-info .variants-item.active {
+    border-color: var(--primary);
+}
+
+.detail-info .variants-item.active::after {
+    background-color: var(--primary);
+    border-radius: 0 0 0 10px;
+    color: #fff;
+    content: "✓";
+    font-size: 10px;
+    height: 13px;
+    padding: 1px 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.detail-info .variants-image {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.detail-info .variants-content {
+    width: 100%;
+}
+
+.detail-info .variants-content>strong,
+.detail-info .variants-content>p {
+    width: 100%;
+    display: block;
+}
+
+.detail-info .detail-priceBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeeef;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 65px;
+    padding: 5px;
+}
+
+.detail-info .price-box {
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    width: 49%;
+    border: 1px solid transparent;
+}
+
+.detail-info .price-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-info .price-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.detail-info .price-show {
+    width: 100%;
+    color: #4e4e4e;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.detail-info .price-text {
+    color: #202020;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+.detail-info .price-through {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #202020;
+    width: 100%;
+    text-align: center;
+    text-decoration-line: line-through;
+}
+
+.detail-info .price-box.active {
+    border: 1px solid var(--primary);
+}
+
+.detail-info .price-box.active::after {
+    border: 10px solid transparent;
+    border-top-color: #fd2424;
+    bottom: -20px;
+    content: "";
+    left: calc(50% - 5px);
+    position: absolute;
+}
+
+.detail-info .price-box.active .price-show {
+    color: var(--primary);
+}
+
+.detail-info .detail-benner {
+    display: flex;
+    margin: 12px 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.detail-info .detail-benner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.detail-info .detail-promotion {
+    width: 100%;
+    border: 1px solid #fee2e2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.detail-info .promotion-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #fee2e2;
+    color: var(--primary);
+    font-weight: 600;
+    height: 42px;
+    padding: 8px;
+}
+
+.detail-info .promotion-title>svg {
+    width: 24px;
+    height: 24px;
+}
+
+.detail-info .promotion-list {
+    padding: 8px;
+}
+
+.detail-info .promotion-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    gap: 4px;
+}
+
+.detail-info .promotion-number {
+    font-size: 1rem;
+    font-weight: 600;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: #FFF;
+}
+
+.detail-info .promotion-text {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.detail-info .promotion-text:hover {
+    text-decoration: underline;
+}
+
+.detail-info .detail-boxBtn {
+    margin-top: 12px;
+}
+
+.detail-info .detail-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.detail-info .detail-btn .btn-buy {
+    background: linear-gradient(#f52f32, #e11b1e);
+    border-radius: 10px;
+    color: #fff;
+    flex-direction: column;
+    height: 60px;
+    outline: none;
+    width: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-info .detail-btn .btn-buy strong {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.detail-info .detail-btn .btn-buy span {
+    font-size: 1.4rem;
+}
+
+.detail-info .detail-btn .btn-addCart {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    flex-direction: column;
+    height: 60px;
+    width: 60px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-info .detail-btn .btn-addCart svg {
+    width: 30px;
+    height: 30px;
+}
+
+.detail-info .detail-btn .btn-addCart span {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.detail-info .detail-btn .btn-installment {
+    background: linear-gradient(180deg, #3a78d0, #277cea);
+    border-radius: 10px;
+    height: 60px;
+    padding-bottom: 5px;
+    width: calc(50% - 5px);
+    color: #FFF;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-info .detail-btn .btn-installment strong {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.detail-info .detail-btn .btn-installment span {
+    font-size: 1.2rem;
+}
+
+.detail-info .detail-btn .btn-update {
+    background-color: #ec8104;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 auto 10px;
+    padding: 5px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-info .detail-btn .btn-update strong {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.detail-info .detail-btn .btn-update span {
+    font-size: 1.2rem;
+}
+
+.detail-info .detail-promotionMore {
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.detail-info .promotionMore-title {
+    background-color: #d1d5db;
+    font-size: 1.4rem;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    color: #0a0a0a;
+}
+
+.detail-info .promotionMore-list {
+    width: 100%;
+}
+
+.detail-info .promotionMore-item {
+    font-size: 1.2rem;
+    margin: 10px 5px;
+    display: flex;
+    gap: 4px;
+}
+
+.detail-info .promotionMore-tick {
+    color: var(--success);
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+.detail-info .promotionMore-icon {
+    height: 16px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.detail-info .promotionMore-text {
+    font-size: 1.2rem;
+}
+
+.detail-info .extendedWarranty {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 10px 0;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.detail-info .extendedWarranty-title {
+    display: flex;
+    gap: 5px;
+}
+
+.detail-info .extendedWarranty-title .title-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.detail-info .extendedWarranty-title .title-content {
+    margin-bottom: 10px;
+}
+
+.detail-info .extendedWarranty-title .title-text {
+    color: #444;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.detail-info .extendedWarranty-title .title-text a {
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.detail-info .extendedWarranty-title .title-note {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.detail-info .extendedWarranty-list {
+    width: 100%;
+}
+
+.detail-info .extendedWarranty-item {
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 5px 10px;
+    user-select: none;
+    width: 100%;
+    font-size: 1.4rem;
+    display: block;
+}
+
+.detail-info .extendedWarranty-content {
+    display: flex;
+    gap: 4px;
+}
+
+.detail-info .extendedWarranty-radio {
+    width: 13px;
+    height: 13px;
+    accent-color: var(--primary);
+}
+
+.detail-info .extendedWarranty-text {
+    line-height: 1.25;
+}
+
+.detail-info .extendedWarranty-priceBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-info .extendedWarranty-price {
+    color: var(--primary);
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.detail-info .extendedWarranty-showMore {
+    background: transparent;
+    color: var(--primary);
+}
+
+.detail-info .extendedWarranty-showMore:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,192 @@
+.lg {
+    margin: 50px 0;
+}
+
+.lg .lg-image {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lg .lg-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.lg .lg-image > h1 {
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.lg .lg-connectWith {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.lg .lg-connectWith .connectWith  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lg .connectWith .connectWith-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.lg .connectWith .connectWith-text {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.lg .lg-lineThrough {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin: 20px auto 0;
+}
+
+.lg .lg-lineThrough > hr {
+    border: none;
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 100%;
+    margin: 24px 0;
+}
+
+.lg .lg-lineThrough > p {
+    margin: 0 5px;
+    font-size: 1.6rem;
+}
+
+.lg .lg-form {
+    margin: 12px;
+}
+
+.lg .lg-boxInput {
+    border-radius: 0;
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px ;
+}
+
+.lg .lg-boxInput .lg-input {
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid rgba(145, 158, 171, .3);
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 24px;
+    padding: 18px 20px 2px 0;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.lg .lg-boxInput .lg-inputTitle {
+    color: #999;
+    left: 0;
+    top: 0;
+    position: absolute;
+    top: 18px;
+    user-select: none;
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 18px;
+    transform: translateY(-100%);
+    display: none;
+}
+
+.lg .lg-boxInput .lg-input:not(:placeholder-shown) ~ .lg-inputTitle {
+    display: block;
+}
+
+.lg .lg-forgetPassword {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #777;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 25px;
+    margin-left: auto;
+}
+
+.lg .lg-submit {
+    background: var(--primary);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 20px auto 0;
+    padding: 11px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.lg .lg-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.lg .lg-questionText {
+    color: #777;
+    font-size: 1.4rem;
+}
+
+.lg .lg-go {
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lg .lg-promotion {
+    color: var(--primary);
+    display: block;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.lg .lg-promotion:hover {
+    font-style: italic;
+}
+
+.lg .lg-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lg .lg-optionCheckbox {
+    width: 13px;
+    height: 13px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.lg .lg-optionText {
+    color: #777;
+    font-size: 1.3rem;
+    line-height: 25px;
+    cursor: pointer;
+}

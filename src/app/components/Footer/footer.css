@@ -1,0 +1,237 @@
+#footer {
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.1),
+        0 2px 6px 2px rgba(60, 64, 67, 0.15);
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+
+#footer .top {
+    background-color: #fff;
+    padding: 15px;
+}
+
+#footer .top .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px auto;
+}
+
+#footer .top .box {
+    width: 25%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#footer .top .item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#footer .top .title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#footer .top .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+#footer .top .text {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#footer .top .text .phone {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#footer .top .boxIconPay {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+#footer .top .icon-pay {
+    width: 20%;
+    display: flex;
+    padding: 0 5px 5px 0;
+}
+
+#footer .top .icon-pay img {
+    object-fit: cover;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+#footer .top .notification {
+    display: flex;
+    flex-direction: column;
+    margin-top: -12px;
+}
+
+#footer .top .notification .voucher {
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
+#footer .top .notification .tip {
+    color: #111;
+    font-size: 1.3rem;
+}
+
+#footer .top .input {
+    height: 30px;
+    padding: 3px 10px;
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+    border: 1px solid rgba(10, 10, 10, 0.1);
+}
+
+#footer .top .input:focus {
+    border-color: var(--primary);
+}
+
+#footer .top .rule {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+#footer .top .rule input {
+    width: 13px;
+    height: 13px;
+    accent-color: var(--primary);
+}
+
+#footer .top .submit {
+    width: 100%;
+    background-color: var(--primary);
+    text-transform: uppercase;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+#footer .top .app-downloader {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .top .app-downloader .qr {
+    width: 40%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#footer .top .app-downloader .app {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .top .boxIconNetWork {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .top .icon-netWork {
+    width: 20%;
+    display: flex;
+    padding: 0 10px 0 0;
+}
+
+#footer .top .corp-members {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#footer .top .corp-member {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+#footer .top .corp-member-image {
+    width: 100%;
+    display: flex;
+}
+
+#footer .bottom {
+    background: var(--primary-bg);
+    min-height: 100px;
+    padding: 15px;
+}
+
+#footer .bottom .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .bottom .cms {
+    display: flex;
+}
+
+#footer .bottom .cms .cms-item {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 12px;
+}
+
+#footer .bottom .cms .cms-line {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: var(--text-color);
+}
+
+#footer .bottom .company-information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#footer .bottom .address {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .bottom .certification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#footer .bottom .certification .certification-item {
+    height: 38px;
+    width: auto;
+}

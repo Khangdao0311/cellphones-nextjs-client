@@ -1,1 +1,1 @@
-export { default } from "@/app/pages/client/account/change-password";
+export { default } from "@/pages/S-client/account/change-password";

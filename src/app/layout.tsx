@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { ReduxProvider } from "@/app/redux";
-import { StoreProvider } from "@/app/store";
+import { ReduxProvider } from "@/redux";
+import { StoreProvider } from "@/store";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "cellphoneS",
@@ -17,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ReduxProvider>
-          <StoreProvider>
-            {children}
-          </StoreProvider>
-        </ReduxProvider>  
+        <Suspense fallback={<div />}>
+          <ReduxProvider>
+            <StoreProvider>{children}</StoreProvider>
+          </ReduxProvider>
+        </Suspense>
       </body>
     </html>
   );

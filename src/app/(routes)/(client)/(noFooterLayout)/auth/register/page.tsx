@@ -1,1 +1,1 @@
-export { default } from "@/app/pages/client/auth/register";
+export { default } from "@/pages/S-client/auth/register";

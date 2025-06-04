@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import HeaderAsideAdmin from "@/app/components/HeaderAsideAdmin";
+import HeaderAsideAdmin from "@/components/HeaderAsideAdmin";
 import "./admin.css";
 
 export default function DefaultLayout({

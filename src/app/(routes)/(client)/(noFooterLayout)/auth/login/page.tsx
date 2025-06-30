@@ -1,1 +1,1 @@
-export { default } from "@/pages/S-client/auth/login";
+export { default } from "@/components/pages/client/auth/login";

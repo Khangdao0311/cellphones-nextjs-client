@@ -1,1 +1,1 @@
-export { default } from "@/pages/S-admin/category/list";
+export { default } from "@/components/pages/admin/category/list";

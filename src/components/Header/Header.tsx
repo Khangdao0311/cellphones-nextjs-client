@@ -54,13 +54,13 @@ function Header() {
     dispatch(actions.setModalSearch(false));
     e.preventDefault();
 
-    const searchParams = new URLSearchParams(query.toString());
+    const searchParams = new URLSearchParams(query!.toString());
     searchParams.set("search", state.search);
     router.push(`/product?${searchParams.toString()}`);
   }
 
   function handleClearSearch() {
-    const searchParams = new URLSearchParams(query.toString());
+    const searchParams = new URLSearchParams(query!.toString());
     searchParams.delete("search");
     dispatch(actions.setValueSearch(""));
     router.push(`?${searchParams.toString()}`);

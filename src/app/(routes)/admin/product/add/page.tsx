@@ -1,1 +1,1 @@
-export { default } from "@/pages/S-admin/product/add";
+export { default } from "@/components/pages/admin/product/add";
